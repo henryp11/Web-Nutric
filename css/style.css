@@ -1,0 +1,69 @@
+body {
+    background: rgb(245, 245, 245);
+    font-family: 'Kreon', serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  flex: 1;
+  display: inherit;
+  justify-content: inherit;
+  height: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+  background: inherit;
+}
+
+.head {
+  background-color: rgb(240, 102, 146);
+  color: white;
+  display: flex; 
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+  flex-wrap: wrap; /* Para que el menú baje cuando voy bajando el ancho de pantalla. Recordar wrap apila los elementos uno abajo del otro cuando no alcanza en pantalla.*/
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.head ol {
+  display: flex; /* este flex afectara a los hijos de ol (li) */
+  height: inherit; /* hereda el valor del elemento padre */
+}
+
+.head ol li {
+  height: inherit;
+}
+
+.head .logo {
+    text-align: center; /* con text-align puedo centrar una imagen sin problemas */
+    margin: 0px;
+}
+
+.logo {
+    height: inherit;
+}
+
+.head img {
+    height: inherit;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* esta opción quita el indicador de número o punto de los elementos de una lista*/
+}
+
+.head a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 25px;
+}
+
+.head nav {
+    height: inherit;
+}
